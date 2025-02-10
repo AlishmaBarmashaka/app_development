@@ -36,12 +36,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Homepage(),
-      // routes: {
-      //   '/':(_) => HomeScreen(),
-      //   '/login':(_) => Login(),
-      //   '/home_page':(_)=> Homepage()
-      // },
+      //rhome: Homepage(),
+       routes: {
+       '/':(_) => HomeScreen(),
+       '/login':(_) => Login(),
+       '/home_page':(_)=> Homepage()
+      },
 
     );
   }

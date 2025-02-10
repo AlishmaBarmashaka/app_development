@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import './home_page.dart';
 
-class Login extends StatelessWidget{
-  const Login ({super.key});
+class Login extends StatefulWidget {
+  const Login({super.key});
+
+  @override
+  _LoginState createState() => _LoginState();
+}
+class _LoginState extends State<Login> {
+  
 
   @override
   Widget build(BuildContext context) {
@@ -71,6 +77,7 @@ class Login extends StatelessWidget{
                     decoration: InputDecoration(
                       labelText:'Password',
                       border:OutlineInputBorder(),
+                      prefixIcon:Icon(Icons.password),
                     ),
                     onChanged: (String value){
                   
@@ -91,8 +98,6 @@ class Login extends StatelessWidget{
               textColor: Colors.white,
               child: Text('Login'),
             )
-
-
 
               ]
             ),
